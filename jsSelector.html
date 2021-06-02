@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery öğreniyorum</title>
+    <title>Document</title>
 </head>
 <body>
-    <button id="btnGoster">Aşağıdaki metni göster</button>
-    <p id="metin" style="display:none">Lorem ipsum</p>
-<input id="adam" >
+   
+    <p class="p2" id="onemli">Quia, voluptate repellat!</p>
+    <p>Fugiat, cupiditate ex?</p>
     <script src="jquery-3.6.0.min.js"></script>
     <script>
-        $("#btnGoster").click(function(){$("#adam").val(9)});
-        $("#btnGoster").click(function(){$("#metin").show()});
+        $("document").ready(function(){
+        $("p").html("merhaba");
+        });
+       
     </script>
+     <p>---</p>
 </body>
 </html>

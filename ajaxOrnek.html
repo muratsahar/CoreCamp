@@ -7,13 +7,19 @@
     <title>JQuery öğreniyorum</title>
 </head>
 <body>
-    <button id="btnGoster">Aşağıdaki metni göster</button>
-    <p id="metin" style="display:none">Lorem ipsum</p>
-<input id="adam" >
+
+    <textarea name="" id="bilgi" cols="60" rows="20"></textarea>
+    
+
     <script src="jquery-3.6.0.min.js"></script>
     <script>
-        $("#btnGoster").click(function(){$("#adam").val(9)});
-        $("#btnGoster").click(function(){$("#metin").show()});
+        $.ajax({
+            url:"github.txt",
+            type:"GET",
+            success: function(cevap){
+                $("#bilgi").val(cevap);
+            }
+        })
     </script>
 </body>
 </html>
